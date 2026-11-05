@@ -1,0 +1,28 @@
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+
+# Dépendances et builds (si tu ajoutes un outil plus tard)
+node_modules/
+dist/
+.cache/
+
+# Secrets et configuration locale
+.env
+.env.*
+*.local
+
+# Journaux
+*.log
+npm-debug.log*
+
+# Archives et fichiers temporaires
+*.zip
+*.tmp
+*.bak
