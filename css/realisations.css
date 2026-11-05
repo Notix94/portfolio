@@ -1,46 +1,7 @@
 /* Page Réalisations : le thème général reste celui de style.css.
    Seuls les panneaux logo reprennent les couleurs de chaque client. */
 
-/* Graphite Ink : #141A1E, #0E3529, #215F47, #B89B4A, #E7DDC6 */
-.case--graphite .case__visual {
-  background: #141a1e;
-  color: #e7ddc6;
-}
+.case--graphite .case__visual { background: #141A1E; color: #E7DDC6; }
 
-/* Black Manor : #211E1E, #272424, #8A756A, #F7F0F0 */
-.case--manor .case__visual {
-  background: #211e1e;
-  color: #f7f0f0;
-}
-.case--manor .case__visual img {
-  max-height: 150px;
-}
-
-/* Pastilles de couleur des deux palettes */
-.case--graphite .codes li:nth-child(1) i {
-  background: #141a1e;
-}
-.case--graphite .codes li:nth-child(2) i {
-  background: #0e3529;
-}
-.case--graphite .codes li:nth-child(3) i {
-  background: #215f47;
-}
-.case--graphite .codes li:nth-child(4) i {
-  background: #b89b4a;
-}
-.case--graphite .codes li:nth-child(5) i {
-  background: #e7ddc6;
-}
-.case--manor .codes li:nth-child(1) i {
-  background: #211e1e;
-}
-.case--manor .codes li:nth-child(2) i {
-  background: #272424;
-}
-.case--manor .codes li:nth-child(3) i {
-  background: #8a756a;
-}
-.case--manor .codes li:nth-child(4) i {
-  background: #f7f0f0;
-}
+.case--manor .case__visual { background: #211E1E; color: #F7F0F0; }
+.case--manor .case__visual img { max-height: 150px; }
