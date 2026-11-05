@@ -1,18 +1,18 @@
 /* NovaWeb29 — feuille de style commune aux trois pages.
-   Concept : carte marine (quadrillage, coordonnées de Brest, un point de signal orange).
-   La page Réalisations surcharge les variables dans css/realisations.css. */
+   Concept : carte marine en noir et blanc (quadrillage, coordonnées de Brest).
+   css/realisations.css ne colore que les panneaux logo des clients. */
 
 /* ---------- Variables ---------- */
 :root {
-  --bg: #ecefee;
-  --surface: #f7f9f8;
-  --fg: #10222b;
-  --muted: #4a5f69;
-  --line: #c6d1d1;
-  --accent: #0e5a70;
+  --bg: #ffffff;
+  --surface: #f5f5f5;
+  --fg: #0a0a0a;
+  --muted: #555555;
+  --line: #d6d6d6;
+  --accent: #0a0a0a;
   --accent-fg: #ffffff;
-  --signal: #e8542b;
-  --grid: rgba(16, 34, 43, 0.06);
+  --signal: #0a0a0a;
+  --grid: rgba(0, 0, 0, 0.05);
 
   --font-display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
   --font-body: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
@@ -21,29 +21,29 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0c171d;
-    --surface: #13232b;
-    --fg: #e6eeee;
-    --muted: #93a8b0;
-    --line: #25383f;
-    --accent: #5eb6cf;
-    --accent-fg: #06161c;
-    --signal: #ff7a52;
-    --grid: rgba(230, 238, 238, 0.06);
+    --bg: #0a0a0a;
+    --surface: #151515;
+    --fg: #f5f5f5;
+    --muted: #a3a3a3;
+    --line: #2e2e2e;
+    --accent: #ffffff;
+    --accent-fg: #0a0a0a;
+    --signal: #ffffff;
+    --grid: rgba(255, 255, 255, 0.06);
     color-scheme: dark;
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #0c171d;
-  --surface: #13232b;
-  --fg: #e6eeee;
-  --muted: #93a8b0;
-  --line: #25383f;
-  --accent: #5eb6cf;
-  --accent-fg: #06161c;
-  --signal: #ff7a52;
-  --grid: rgba(230, 238, 238, 0.06);
+  --bg: #0a0a0a;
+  --surface: #151515;
+  --fg: #f5f5f5;
+  --muted: #a3a3a3;
+  --line: #2e2e2e;
+  --accent: #ffffff;
+  --accent-fg: #0a0a0a;
+  --signal: #ffffff;
+  --grid: rgba(255, 255, 255, 0.06);
   color-scheme: dark;
 }
 
@@ -131,7 +131,7 @@ p {
   text-decoration: none;
 }
 .logo b {
-  color: var(--signal);
+  color: var(--muted);
 }
 
 .site-nav {
@@ -235,7 +235,7 @@ p {
   letter-spacing: -0.04em;
 }
 .hero h1 span {
-  color: var(--signal);
+  color: var(--muted);
 }
 .hero .lead {
   max-width: 36ch;
